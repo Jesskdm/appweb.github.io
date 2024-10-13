@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldonado Bustamante Jesus</title>
+    <style>
+        form{
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid blueviolet;
+            background-color: antiquewhite;
+        }
+        label{
+            font-weight: bold;
+        }
+        input,select{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]{
+            background-color: bisque;
+            color: azure;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Personajes</h1>
+    <form>
+        <label for="nombre">Nombre del personaje:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="Tipopoder">Tipo de poder:</label>
+        <select name="poder" id="poder">
+            <option value="S">Stand</option>
+            <option value="M">Magia</option>
+        </select>
+
+        <label for="Poder">¿Controla bien su poder?</label>
+        <input type="checkbox" name="poder" id="poder">Si
+        <br>
+
+        <label>Genero:</label>
+        <input type="radio" name="genero" id="Mas" value="Mas"> Masculino
+        <input type="radio" name="genero" id="Fem" value="Fem"> Femenino
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
